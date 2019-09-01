@@ -1,0 +1,9 @@
+The Emphasis Selection data files contain four columns separated by a single tab.
+word_id [TAB] word [TAB] BIO_annottaions [TAB] BIO_frequencies [TAB] emphasis_probability [TAB] pos_tags [TAB]
+
+word_id = dataset[Trial, Spark, Quotes], sentence number and word number in the sentence
+word = word in the sentences (empty lines indicate the end of sentences)
+BIO_annottaions = nine annotations coming from annotators (B: the beginning of the selection, I: inside of the selection, O: outside of the selection)
+BIO_frequencies = the frequencies of BIO tags split by "|"
+emphasis_probability = the emphasis probability (summation of B and I tags). This probability will be used for evaluation. 
+pos_tags = Part-of-speech tags (using Stanford core NLP library)
